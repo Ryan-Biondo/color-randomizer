@@ -1,52 +1,71 @@
+/* Styles for the body */
 body {
-    color: #101010;
-    background-color: #F0F000;
-    transition: background-color 0.5s, color 0.5s;
-  }
-  
-  .widget-container {
-    text-align: center;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+  color: #101010; /* Text color: dark gray */
+  background-color: #f0f000; /* Background color: yellow */
+  transition: background-color 0.5s, color 0.5s; /* Add transition effect to background-color and color */
+  font-family: Arial, Helvetica, sans-serif; /* Set the font family */
+}
 
-  .random-color-button {
-    padding: 12px 24px;
-    font-size: 18px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+/* Styles for the widget container */
+.page-wrap {
+  text-align: center; /* Center align the content */
+  height: 100vh; /* Set the height to full viewport height */
+  margin: 0; /* Remove margin */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  text-align: center; /* Center align text */
+}
 
-  .hex-display {
-    text-align: center;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* Styles for the heading */
+h1 {
+  font-size: 3em; /* Set the font size to 3em */
+  margin-bottom: 2em; /* Add 2em bottom margin */
+}
 
+/* Styles for the hex and button group */
+.hex-display-wrap {
+  text-align: center; /* Center align the content */
+  margin-bottom: 20px; /* Add 20px bottom margin */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-around; /* Distribute space evenly between items */
+  align-items: center; /* Center align items horizontally */
+  height: 300px; /* Set the height to 300px */
+  margin-bottom: 100px; /* Add 100px bottom margin */
+}
 
-  #color-wheel {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
-    cursor: crosshair;
-  }
+/* Styles for the hex code color displays */
+.color-display {
+  font-size: 2em; /* Set the font size to 2em */
+  font-weight: bold; /* Set font weight to bold */
+}
 
-  #color-wheel::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 50%;
-  }
+/* Styles for the random color buttons */
+.random-color-button {
+  padding: 12px 24px; /* Add 12px vertical padding and 24px horizontal padding */
+  font-size: 1.5em; /* Set the font size to 1.5em */
+  background-color: #252525; /* Background color: dark gray */
+  color: #ffffff; /* Text color: white */
+  border-radius: 5px; /* Curve corners by 5px */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Styles for the color wheel */
+#color-wheel {
+  width: 200px; /* Set the width to 200px */
+  height: 200px; /* Set the height to 200px */
+  min-height: 200px; /* Set the minimum height to 200px so image doesnt collapse */
+  border-radius: 50%; /* Create a circular shape */
+  background-image: conic-gradient(
+    red 0deg,
+    yellow 60deg,
+    lime 120deg,
+    aqua 180deg,
+    blue 240deg,
+    magenta 300deg,
+    red 360deg
+  ); /* Apply a conic gradient background */
+  cursor: crosshair; /* Set cursor to crosshair */
+}

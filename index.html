@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="widget-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Random Background and Font Color</title>
+  </head>
+  <body>
+    <!-- Page Wrap -->
+    <div class="page-wrap">
+      <!-- Title -->
+      <h1>Randomize the Background and Font Color!</h1>
 
-    <h1>Randomize the Background and Font Color!</h1>
-
-    <div id="color-wheel"></div>
-      <div class="hex-display">
-        <span id="colorCode">Hex Code: #F0F000</span>
-        <button class="random-color-button" id="colorButton">Change Color</button>
-        <span id="textColorCode">Text Color: #101010</span>
+      <!-- Color Display Section -->
+      <div class="hex-display-wrap">
+        <p class="color-display" id="colorCode">Hex Code: #F0F000</p>
+        <button class="random-color-button" id="colorButton">Change Background Color</button>
+        <p class="color-display" id="textColorCode">Text Color: #101010</p>
         <button class="random-color-button" id="textColorButton">Change Text Color</button>
       </div>
+
+      <!-- Color Wheel Section -->
+      <h2>Choose a Background from the Color Wheel</h2>
+      <div id="color-wheel"></div>
     </div>
-  </div>
+
+    <!-- JavaScript files -->
     <script src="./bgGenerator.js"></script>
     <script src="./colorWheel.js"></script>
-
-</body>
+  </body>
 </html>
