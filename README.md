@@ -55,7 +55,7 @@ The color wheel also challenged me to learn about using .getBoundingClientRect()
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/color-randomizer.git`
+1. Clone the repository: `git clone https://github.com/Ryan-Biondo/color-randomizer`
 2. Navigate to the project directory: `cd color-randomizer`
 3. Open `index.html` in your web browser.
 
