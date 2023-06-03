@@ -75,4 +75,4 @@ All rights reserved. This project's code and content are protected under copyrig
 
 ## Acknowledgments
 
-- The inspiration for this project came from working on the Physcira dashboard project with Sean Craig Creative. The other project needs a color changing tool that makes it easy to determine different a palette of color code data.
+- [Sean Craig Creative](https://seancraigcreative.com/) for inspiration.
